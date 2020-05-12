@@ -1,0 +1,50 @@
+  body{
+    margin: 0;
+  }
+#app {
+  position: relative;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  
+  /* margin-top: 60px; */
+}
+.bg-image{
+  width: 70%;
+  height: calc(100vh - 8px);
+}
+.namegrid-container{
+  position: absolute !important;
+      left: calc(50vh + 135px);
+      bottom: 20%;
+}
+.title{
+    position: absolute;
+    left: 2%;
+  }
+
+ @font-face{
+  font-family: selfFont;
+  src:url(./font/DingDingWoYiQingChenTi-2.ttf)
+  }
+.typing-left{
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  writing-mode: vertical-lr;
+  height: 500px;
+}
+.typing-right{
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  writing-mode: vertical-rl;
+  height: 500px;
+}
+.menu{
+  position: absolute;
+  right: 0%;
+  font-size: 20px;
+  }
