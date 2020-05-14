@@ -20,8 +20,9 @@
     <router-view/>
   </div>
 </template>
-<!-- <script src="./utils/click_heart.js"></script> -->
+
 <script>
+	import { httpService } from '../config'
   import "@/assets/app.css"
   // 外部组件
  import LoveHeart from '@/components/LoveHeart/index.vue'
@@ -34,7 +35,7 @@ export default {
   name: 'App',
   data(){
     return{
-        bgPath:'http://192.168.31.112/static/images/bg.png',
+        bgPath:httpService.baseUrl + '/static/images/bg.png',
         left_text:'我在贩卖日落，你像神明一样慷慨地将光晒向我，从此人间被点亮后来才发现',
         right_text:'',
     }

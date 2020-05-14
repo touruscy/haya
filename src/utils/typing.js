@@ -75,6 +75,8 @@
   
  
  
-export default Typing;
+module.exports = {
+	'Typing' : Typing
+} 
   
   

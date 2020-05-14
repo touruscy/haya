@@ -28,14 +28,14 @@
     },
     methods: {
       typing() {
-        console.log(this.text)
         if (this.i <= this.text.length) {
-            this.text2 = this.text.slice(0, this.i++) + '_';
+            this.text2 = this.text.slice(0, this.i++) + '|';
             this.timer = setTimeout(() => {
                 this.typing();
             }, 300);
         } else {
-            clearTimeout(this.timer)
+          this.text2 = this.text
+           clearTimeout(this.timer)
         }
       }
     },
@@ -43,7 +43,7 @@
       this.typing();
     },
     updated(){
-      
+
     }
   }
   </script>

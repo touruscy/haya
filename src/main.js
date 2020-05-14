@@ -23,13 +23,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  // components: {
-  //   App ,
-  //   LoveRiverApp,
-  //   LovePhotoApp,
-  //   LoveSpeechApp
-  // },
-  // template: '<App/>'
+
 })
 
 
